@@ -1,0 +1,19 @@
+.logo {
+  display: block;
+  width: 8.88889rem;
+  height: 3.27778rem;
+  img {
+    @extend %fill-image;
+  }
+}
+
+@media (max-width: 991px) {
+  
+}
+
+@media (max-width: 480px) {
+  // .logo {
+  //   width: 8.75rem;
+  //   height: 3.27363rem;
+  // }
+}
