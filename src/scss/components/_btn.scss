@@ -1,0 +1,27 @@
+.btn {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  padding: 1.06rem 3.56rem;
+  font-size: 0.88889rem;
+  font-weight: 500;
+  line-height: 140%;
+  color: #fff;
+  text-align: center;
+  background: var(--primary-color);
+  border-radius: 0.55556rem;
+  box-shadow: 0 0.278rem 2.222rem 0 rgba(108 0 156 / 0.40);
+  cursor: pointer;
+  transition: 0.4s all;
+  &:hover {
+    background: #A31FDE;
+  }
+  &:active {
+    background-color: #5A2372;
+    transition: 0.1s all;
+  }
+}
+
+@media (max-width: 375px) {
+
+}

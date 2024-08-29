@@ -1,0 +1,11 @@
+.map {
+  width: 100%;
+  height: 21.22222rem;
+  border-radius: 0.60672rem;
+  overflow: hidden;
+  box-shadow: 0 1.6667rem 3.3333rem 0 #1E002B;
+  & > div, iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

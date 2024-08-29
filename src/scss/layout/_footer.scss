@@ -1,0 +1,159 @@
+.footer {
+  background: var(--primary-color-3);
+  &__columns {
+    padding-top: 3.89rem;
+    padding-bottom: 3.89rem;
+    display: flex;
+    gap: 2.22rem;
+    border-bottom: 0.055556rem solid var(--primary-color);
+  }
+  &__column {
+    flex: 1 0 calc(50% - 1.12rem);
+    min-width: 0;
+  }
+  &__logo {
+    &:not(:last-child) {
+      margin-bottom: 2.22rem;
+    }
+  }
+  &__row {
+    display: flex;
+    gap: 2rem;
+  }
+  &__contacts {
+    @extend %flex-column;
+    gap: 1.39rem;
+    flex: 1 0 15.16667rem;
+  }
+  &__btn {
+    &:not(:first-child) {
+      margin-top: 2.17rem;
+    }
+  }
+  &__nav {
+    .nav__list {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.67rem;
+    }
+    .nav__item {
+      font-size: 0.88889rem;
+      color: #F3D9FF;
+      &:hover, &--current {
+        color: #fff;
+      }
+    }
+  }
+  &__bottom {
+    padding-top: 1.39rem;
+    padding-bottom: 1.39rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  &__copyright, &__bottom-nav {
+    flex-grow: 1;
+  }
+  &__copyright {
+    font-size: 0.77778rem;
+    font-weight: 300;
+    line-height: 140%;
+    color: #F3D9FF;
+  }
+  &__bottom-nav {
+    .nav__list {
+      gap: 1rem;
+      justify-content: space-between;
+      @media (min-width: 376px) {
+        text-align: right;
+      }
+    }
+    .nav__item {
+      font-size: 0.77778rem;
+      font-weight: 300;
+      line-height: 140%;
+      color: #F3D9FF;
+      &:hover, &--current {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    &__columns {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    &__logo {
+      &:not(:last-child) {
+        margin-bottom: 2.22rem;
+      }
+    }
+    &__row {
+      flex-wrap: wrap;
+      row-gap: 3rem;
+    }
+    &__contacts {
+      gap: 1.25rem;
+      flex: 0 0 20rem;
+    }
+    &__btn {
+      &:not(:first-child) {
+        margin-top: 0.5rem;
+      }
+    }
+    &__bottom {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    &__bottom-nav {
+      .nav__list {
+        gap: 0.85rem;
+        align-items: flex-end;
+      }
+    }
+  } 
+}
+
+@media (max-width: 375px) {
+  .footer {
+    &__columns {
+      padding-top: 2.78rem;
+      padding-bottom: 2.78rem;
+      gap: 2.78rem;
+    }
+    &__logo {
+      &:not(:last-child) {
+        margin-bottom: 2.78rem;
+      }
+    }
+    &__row {
+      row-gap: 2.78rem;
+    }
+    &__contacts {
+      gap: 1.17rem;
+      flex: 0 1 15.16667rem;
+      .contacts-list__item {
+        font-size: 0.88889rem;
+      }
+    }
+    &__bottom {
+      padding-top: 2.22rem;
+      padding-bottom: 2.22rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.11rem;
+    }
+    &__bottom-nav {
+      .nav__list {
+        gap: 1.11rem;
+        align-items: flex-start;
+      }
+    }
+  } 
+}

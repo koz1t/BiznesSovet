@@ -2,7 +2,7 @@
   &__list {
     display: flex;
     align-items: center;
-    gap: 1.22rem;
+    gap: 1rem;
   }
   &__item {
     font-size: 0.77778rem;
@@ -13,13 +13,16 @@
       color: var(--primary-color);
     }
     &:active {
-      color: var(--primary-darken-color);
+      color: var(--primary-color-2);
     }
     &--current {
       color: var(--primary-color);
       text-shadow: 0 0 0.05rem var(--primary-color);
       pointer-events: none;
     }
+  }
+  &__link {
+    color: inherit;
   }
 }
 

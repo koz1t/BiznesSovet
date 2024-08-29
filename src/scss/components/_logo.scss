@@ -5,6 +5,11 @@
   img {
     @extend %fill-image;
   }
+
+  &--big {
+    width: 11.1111rem;
+    height: 4.1111rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -12,8 +17,10 @@
 }
 
 @media (max-width: 480px) {
-  // .logo {
-  //   width: 8.75rem;
-  //   height: 3.27363rem;
-  // }
+  .logo {
+    &--big {
+      width: 7.7778rem;
+      height: 2.8889rem;
+    }
+  }
 }
