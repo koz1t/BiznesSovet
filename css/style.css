@@ -11,6 +11,13 @@
      object-fit: contain;
 }
 
+.bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer__contacts, .contacts-list, .header__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,6 +29,22 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.hero-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -918,6 +941,16 @@ html, body {
             align-items: flex-start;
   }
 }
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(0.35);
+          filter: brightness(0.35);
+}
 .logo {
   display: block;
   width: 8.88889rem;
@@ -971,7 +1004,7 @@ html, body {
   width: -moz-max-content;
   width: max-content;
   max-width: 100%;
-  padding: 1.06rem 3.56rem;
+  padding: 1.06rem 2.33rem;
   font-size: 0.88889rem;
   font-weight: 500;
   line-height: 140%;
@@ -993,6 +1026,10 @@ html, body {
   -webkit-transition: 0.1s all;
   transition: 0.1s all;
 }
+.btn--long {
+  padding-left: 3.56rem;
+  padding-right: 3.56rem;
+}
 
 .map {
   width: 100%;
@@ -1005,4 +1042,65 @@ html, body {
 .map > div, .map iframe {
   width: 100%;
   height: 100%;
+}
+
+.main-title {
+  font-size: 2.88889rem;
+  font-weight: 600;
+  line-height: 110%;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .main-title {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 375px) {
+  .main-title {
+    font-size: 1.88889rem;
+  }
+}
+.hero-section__container {
+  position: relative;
+  min-height: 27.77778rem;
+  padding-top: 7.11rem;
+  padding-bottom: 7.11rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 1.11111rem;
+  overflow: hidden;
+}
+.hero-section__title {
+  max-width: 41.33333rem;
+}
+.hero-section__subtitle {
+  line-height: 140%;
+}
+.hero-section__subtitle:not(:first-child) {
+  margin-top: 0.83rem;
+}
+.hero-section__btn:not(:first-child) {
+  margin-top: 1.67rem;
+}
+
+@media (max-width: 991px) {
+  .hero-section__title {
+    max-width: 80%;
+  }
+  .hero-section__subtitle {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 375px) {
+  .hero-section__container {
+    padding-top: 7.28rem;
+    padding-bottom: 7.28rem;
+  }
+  .hero-section__title {
+    max-width: 17.11111rem;
+  }
+  .hero-section__subtitle {
+    font-size: 0.88889rem;
+  }
 }

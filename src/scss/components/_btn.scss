@@ -2,7 +2,7 @@
   display: block;
   width: max-content;
   max-width: 100%;
-  padding: 1.06rem 3.56rem;
+  padding: 1.06rem 2.33rem;
   font-size: 0.88889rem;
   font-weight: 500;
   line-height: 140%;
@@ -19,6 +19,10 @@
   &:active {
     background-color: #5A2372;
     transition: 0.1s all;
+  }
+  &--long {
+    padding-left: 3.56rem;
+    padding-right: 3.56rem;
   }
 }
 

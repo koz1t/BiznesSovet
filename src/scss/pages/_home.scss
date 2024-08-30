@@ -1,4 +1,56 @@
 // ==================
 // hero-section
 // ==================
+.hero-section {
+  &__container {
+    position: relative;
+    min-height: 27.77778rem;
+    padding-top: 7.11rem;
+    padding-bottom: 7.11rem;
+    @extend %column-center;
+    text-align: center;
+    color: #fff;
+    border-radius: 1.11111rem;
+    overflow: hidden;
+  }
+  &__title {
+    max-width: 41.33333rem;
+  }
+  &__subtitle {
+    line-height: 140%;
+    &:not(:first-child) {
+      margin-top: 0.83rem;
+    }
+  }
+  &__btn {
+    &:not(:first-child) {
+      margin-top: 1.67rem;
+    }
+  }
+}
 
+@media (max-width: 991px) {
+  .hero-section {
+    &__title {
+      max-width: 80%;
+    }
+    &__subtitle {
+      font-size: 0.95rem;
+    }
+  } 
+}
+
+@media (max-width: 375px) {
+  .hero-section {
+    &__container {
+      padding-top: 7.28rem;
+      padding-bottom: 7.28rem;
+    }
+    &__title {
+      max-width: 17.11111rem;
+    }
+    &__subtitle {
+      font-size: 0.88889rem;
+    }
+  } 
+}
