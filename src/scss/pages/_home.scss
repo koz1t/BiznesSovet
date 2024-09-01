@@ -54,3 +54,216 @@
     }
   } 
 }
+
+
+
+
+
+// ==================
+// tasks-section
+// ==================
+.tasks-section {
+  &__cards {
+    .cards__item {
+      min-height: 12.05556rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .tasks-section {
+    &__cards {
+      .cards__item {
+        min-height: 10rem;
+      }
+    }
+  } 
+}
+
+@media (max-width: 375px) {
+  .tasks-section {
+    &__cards {
+      .cards__item {
+        min-height: 5.88889rem;
+      }
+    }
+  } 
+}
+
+
+
+
+
+// ==================
+// cooperation-section
+// ==================
+.cooperation-section {
+  &__content {
+    display: flex;
+    gap: 3.22rem;
+  }
+  &__text {
+    &:not(:only-child) {
+      flex: 0 0 28.16667rem;
+    }
+    color: #424242;
+    line-height: 160%;
+    b, strong {
+      color: var(--primary-color);
+      font-size: 2.11111rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .cooperation-section {
+    &__content {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    &__text {
+      &:not(:only-child) {
+        flex: auto;
+      }
+      font-size: 0.95rem;
+      b, strong {
+        font-size: 1.75rem;
+      }
+    }
+  } 
+}
+
+@media (max-width: 480px) {
+  .cooperation-section {
+    &__content {
+      gap: 1.11rem;
+    }
+    &__text {
+      font-size: 0.88889rem;
+      b, strong {
+        font-size: 1.55556rem;
+      }
+    }
+  } 
+}
+
+
+
+
+
+// ==================
+// feedback-section
+// ==================
+.feedback-section {
+  &--image {
+    background: url("../images/common/protection.svg") no-repeat 41% center /10.64106rem 10.16667rem;
+    &__title {
+      max-width: 24rem;
+    }
+    &__text {
+      max-width: 22.22222rem;
+    }
+  }
+  &__text {
+    &:not(:first-child) {
+      margin-top: 0.83rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .feedback-section {
+    &--image {
+      background-position: 100% top;
+      &__title, &__text {
+        max-width: 80%;
+      }
+    }
+    &__text {
+      font-size: 0.95rem;
+      &:not(:first-child) {
+        margin-top: 0.45rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .feedback-section {
+    &--image {
+      // background-position: 100% top;
+      &__title, &__text {
+        max-width: 13rem;
+      }
+    }
+    &__text {
+      font-size: 0.88889rem;
+      &:not(:first-child) {
+        margin-top: 0.28rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+// ==================
+// service-section
+// ==================
+
+
+
+
+
+// ==================
+// stages-section
+// ==================
+.stages-section {
+  @media (min-width: 992px) {
+    &__timeline {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 991px) and (min-width: 551px) {
+  .stages-section {
+    &__timeline {
+      margin: 0 auto;
+    }
+  } 
+}
+
+@media (max-width: 550px) {
+  .stages-section {
+    &__timeline {
+      margin-left: auto;
+    }
+  } 
+}
+
+
+
+
+
+// ==================
+// guarantees-section
+// ==================
+.guarantees-section {
+  &__cards {
+    &:not(:first-child) {
+      margin-top: 1.67rem;
+    }
+  }
+}
+
+
+
+
+
+// ==================
+// reviews-section
+// ==================

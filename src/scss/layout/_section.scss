@@ -1,0 +1,130 @@
+:root {
+  --section-title: #232323;
+  --section-color: #F6F6F6;
+}
+
+.section {
+  margin-bottom: 5.56rem;
+  &--color {
+    background: var(--section-color);
+    .section__container {
+      padding-top: 5.56rem;
+      padding-bottom: 5.56rem;
+    }
+    .cards {
+      &__item {
+        color: var(--base-font-color);
+        background: #FCFCFC;
+        &--important {
+          background: #F4EFEB;
+        }
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    &:not(:last-child) {
+      margin-bottom: 1.11rem;
+    }
+  }
+  &__title {
+    color: var(--section-title);
+    font-size: 1.77778rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  &__subtitle {
+    color: var(--primary-color);
+    line-height: 140%;
+  }
+  &__content {
+    padding: 1.39rem 1.94rem;
+    background: #F6F6F6;
+    border-radius: 1.11111rem;
+    overflow: hidden;
+    .cards {
+      &__item {
+        background: #FCFCFC;
+      }
+    }
+  }
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__column {
+    &--image {
+      position: relative;
+      width: 100%;
+      padding-bottom: 20.72222rem;
+      border-radius: 1.11111rem;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @extend %stretch-image;
+      }
+    }
+    @media (min-width: 992px) {
+      &:not(:only-child) {
+        flex: 0 0 31.11111rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .section {
+    margin-bottom: 4rem;
+    &--color {
+      .section__container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+    }
+    &__header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.28rem;
+    }
+    &__title {
+      font-size: 1.5rem;
+    }
+    &__content {
+      padding: 1.39rem;
+    }
+    &__columns {
+      flex-direction: column;
+      gap: 1.11rem;
+    }
+    &__column {
+      &--image {
+        padding-bottom: 60%;
+      }
+    }
+  } 
+}
+
+@media (max-width: 375px) {
+  .section {
+    margin-bottom: 3.33rem;
+    &--color {
+      .section__container {
+        padding-top: 3.33rem;
+        padding-bottom: 3.33rem;
+      }
+    }
+    &__title {
+      font-size: 1.33333rem;
+    }
+    &__column {
+      &--image {
+        padding-bottom: 66.67%;
+      }
+    }
+  } 
+}

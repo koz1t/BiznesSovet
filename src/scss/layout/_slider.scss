@@ -1,0 +1,116 @@
+.slider {
+  &__item {
+    padding: 0 0.28rem;
+    transition: 0.4s all;
+    &-inner {
+      position: relative;
+      padding-bottom: 11.11111rem;
+      background: #F6F6F6;
+      border-radius: 1.11111rem;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @extend %stretch-image;
+      }
+    }
+    &--player {
+      cursor: pointer;
+      .slider__item-inner {
+        transition: inherit;
+        &::after {
+          content: '';
+          @extend %absolute-center;
+          width: 3.33333rem;
+          padding-bottom: 3.33333rem;
+          background: url('../images/common/player.svg') no-repeat center / cover;
+          border-radius: 50%;
+          transition: inherit;
+        }
+      }
+      &:hover {
+        .slider__item-inner {
+          &::after {
+            scale: 1.05;
+          }
+        }
+      }
+    }
+  }
+  .swiper-pagination {
+    position: static;
+    margin-top: 0.7rem;
+    &-bullet {
+      width: 0.44444rem;
+      height: 0.44444rem;
+      margin: 0 0.28rem !important;
+      background: #C8C8C8;
+      border-radius: 0.27778rem;
+      opacity: 1;
+      transition: 0.4s all;
+      &-active {
+        width: 1.66667rem;
+        background: var(--primary-color);
+      }
+    }
+  }
+  &--label {
+    .slider__item {
+      &-inner {
+        padding: 1.11rem 1.11rem 1.39rem;
+        background: #F4EFEB;
+        border-radius: 1.11111rem;
+      }
+      &-image {
+        position: relative;
+        padding-bottom: 19.44444rem;
+        border-radius: inherit;
+        overflow: hidden;
+        &:not(:last-child) {
+          margin-bottom: 0.83rem;
+        }
+      }
+      &-title {
+        font-weight: 600;
+        &:not(:last-child) {
+          margin-bottom: 0.28rem;
+        }
+      }
+      &-subtitle {
+        font-size: 0.88889rem;
+        font-weight: 400;
+        line-height: 140%;
+        color: #848484;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .slider {
+    &__item {
+      &-inner {
+        padding-bottom: 65%;
+      }
+      &--player {
+        .slider__item-inner {
+          &::after {
+            width: 18.755%;
+            padding-bottom: 18.755%;
+          }
+        }
+      }
+    }
+    .swiper-pagination {
+      margin-top: 0.5rem;
+    }
+    &--label {
+      .slider__item {
+        &-image {
+          padding-bottom: 105%;
+        }
+      }
+    }
+  } 
+}

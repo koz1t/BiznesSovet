@@ -3,6 +3,8 @@
 @import 'abstracts/animations';
 
 @import 'vendors/reset';
+@import 'vendors/swiper-bundle.min';
+@import 'vendors/fancybox';
 
 @import 'base/base';
 @import 'base/typography';
@@ -13,11 +15,18 @@
 @import 'layout/contacts-list';
 @import 'layout/footer';
 @import 'layout/bg';
+@import 'layout/section';
+@import 'layout/cards';
+@import 'layout/timeline';
+@import 'layout/slider';
+@import 'layout/popup';
+@import 'layout/text';
 
 @import 'components/logo';
 @import 'components/burger-btn';
 @import 'components/btn';
 @import 'components/map';
 @import 'components/main-title';
+@import 'components/feedback-form';
 
 @import 'pages/home';
