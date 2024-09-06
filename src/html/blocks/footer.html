@@ -1,0 +1,91 @@
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <a class="footer__logo logo logo--big" href="/"><img src="images/common/logo-white.svg" alt=""></a>
+            <div class="footer__row">
+              <div class="footer__contacts">
+                <ul class="contacts-list contacts-list--phone contacts-list--white">
+                  <li class="contacts-list__item"><a class="contacts-list__link" href="tel:">+7 (495) 940 79 58</a></li>
+                </ul>
+                <ul class="contacts-list contacts-list--mail contacts-list--white">
+                  <li class="contacts-list__item"><a class="contacts-list__link"
+                      href="mailto:info@bsiovet.ru">info@bsiovet.ru</a></li>
+                </ul>
+                <ul class="contacts-list contacts-list--address contacts-list--white">
+                  <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                      <address>г. Москва, Научный проезд, 19. Бизнес центр «9 акров»</address>
+                    </a></li>
+                </ul>
+                <button class="footer__btn btn btn--long" data-popup-feedback>Заказать звонок</button>
+              </div>
+              <nav class="footer__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
+                  <li class="nav__item nav__item--current"><a class="nav__link" href="#">Юридическое сопровождение</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Бухгалтерские услуги</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Для таксопарков</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Банкротство</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__column">
+            <div class="map">
+              <div style="position:relative;overflow:hidden;"><a
+                  href="https://yandex.by/maps/org/9_akrov/1236911074/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">9 Акров</a><a
+                  href="https://yandex.by/maps/213/moscow/category/business_center/184107509/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:14px;">Бизнес-центр в Москве</a><iframe
+                  src="https://yandex.by/map-widget/v1/?ll=37.554138%2C55.653317&mode=poi&poi%5Bpoint%5D=37.554094%2C55.653171&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1236911074&z=17.26"
+                  width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">© 2024 «Бизнес Совет»</p>
+          <nav class="footer__bottom-nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--current"><a class="nav__link" href="#">Политика конфиденциальности</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Карта сайта</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div class="popup" id="feedback-popup">
+    <div class="popup__container container">
+      <div class="popup__content">
+        <form class="feedback-form" action="/">
+          <div class="feedback-form__title">Оставить заявку</div>
+          <div class="feedback-form__text text">Оставьте заявку и с Вами свяжутся в ближайшее время</div>
+          <div class="feedback-form__inputs">
+            <div class="feedback-form__input feedback-form__input--erro" data-invalid="Имя введено некорректно">
+              <input type="text" name="name" placeholder="Иванов Иван">
+            </div>
+            <div class="feedback-form__input" data-invalid="Телефон введен некорректно">
+              <input type="text" name="phone" placeholder="+7 (999) 999 99 99">
+            </div>
+          </div>
+          <label class="feedback-form__agreement feedback-form__agreement--erro" data-error="Вы должны дать согласие">
+            <input type="checkbox" name="agreement">
+            <div class="feedback-form__agreement-inner">
+              Нажимая на кнопку «Отправить», Вы даете согласие на обработку персональных данных
+            </div>
+          </label>
+          <div class="feedback-form__submit btn">Отправить</div>
+          <button class="feedback-form__submit btn" type="submit">Отправить</button>
+        </form>
+        <button class="popup__close"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

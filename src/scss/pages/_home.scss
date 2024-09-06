@@ -14,7 +14,7 @@
     overflow: hidden;
   }
   &__title {
-    max-width: 41.33333rem;
+    max-width: 45.33333rem;
   }
   &__subtitle {
     line-height: 140%;
@@ -32,7 +32,7 @@
 @media (max-width: 991px) {
   .hero-section {
     &__title {
-      max-width: 80%;
+      max-width: 85%;
     }
     &__subtitle {
       font-size: 0.95rem;
@@ -158,10 +158,10 @@
 .feedback-section {
   &--image {
     background: url("../images/common/protection.svg") no-repeat 41% center /10.64106rem 10.16667rem;
-    &__title {
+    .feedback-section__title {
       max-width: 24rem;
     }
-    &__text {
+    .feedback-section__text {
       max-width: 22.22222rem;
     }
   }
@@ -176,7 +176,7 @@
   .feedback-section {
     &--image {
       background-position: 100% top;
-      &__title, &__text {
+      .feedback-section__title, .feedback-section__text {
         max-width: 80%;
       }
     }
@@ -193,7 +193,7 @@
   .feedback-section {
     &--image {
       // background-position: 100% top;
-      &__title, &__text {
+      .feedback-section__title, .feedback-section__text {
         max-width: 13rem;
       }
     }

@@ -4526,7 +4526,7 @@ input[type=checkbox]:checked ~ .feedback-form__agreement-inner::before {
   overflow: hidden;
 }
 .hero-section__title {
-  max-width: 41.33333rem;
+  max-width: 45.33333rem;
 }
 .hero-section__subtitle {
   line-height: 140%;
@@ -4540,7 +4540,7 @@ input[type=checkbox]:checked ~ .feedback-form__agreement-inner::before {
 
 @media (max-width: 991px) {
   .hero-section__title {
-    max-width: 80%;
+    max-width: 85%;
   }
   .hero-section__subtitle {
     font-size: 0.95rem;
@@ -4627,10 +4627,10 @@ input[type=checkbox]:checked ~ .feedback-form__agreement-inner::before {
 .feedback-section--image {
   background: url("../images/common/protection.svg") no-repeat 41% center/10.64106rem 10.16667rem;
 }
-.feedback-section--image__title {
+.feedback-section--image .feedback-section__title {
   max-width: 24rem;
 }
-.feedback-section--image__text {
+.feedback-section--image .feedback-section__text {
   max-width: 22.22222rem;
 }
 .feedback-section__text:not(:first-child) {
@@ -4641,7 +4641,7 @@ input[type=checkbox]:checked ~ .feedback-form__agreement-inner::before {
   .feedback-section--image {
     background-position: 100% top;
   }
-  .feedback-section--image__title, .feedback-section--image__text {
+  .feedback-section--image .feedback-section__title, .feedback-section--image .feedback-section__text {
     max-width: 80%;
   }
   .feedback-section__text {
@@ -4652,7 +4652,7 @@ input[type=checkbox]:checked ~ .feedback-form__agreement-inner::before {
   }
 }
 @media (max-width: 375px) {
-  .feedback-section--image__title, .feedback-section--image__text {
+  .feedback-section--image .feedback-section__title, .feedback-section--image .feedback-section__text {
     max-width: 13rem;
   }
   .feedback-section__text {
