@@ -21,6 +21,8 @@
 @import 'layout/slider';
 @import 'layout/popup';
 @import 'layout/text';
+@import 'layout/table';
+@import 'layout/media-grid';
 
 @import 'components/logo';
 @import 'components/burger-btn';
@@ -28,5 +30,7 @@
 @import 'components/map';
 @import 'components/main-title';
 @import 'components/feedback-form';
+@import 'components/tooltip';
+@import 'components/tariffs';
 
 @import 'pages/home';

@@ -12,3 +12,5 @@
 //@prepros-append _fancybox-init
 
 //@prepros-append _popup
+
+//@prepros-append _tooltip

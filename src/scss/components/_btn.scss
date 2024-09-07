@@ -24,6 +24,16 @@
     padding-left: 3.56rem;
     padding-right: 3.56rem;
   }
+  &--empty {
+    color: var(--primary-color);
+    background: transparent;
+    border: 0.0556rem solid var(--primary-color);
+    box-shadow: none;
+    &:hover {
+      color: #fff;
+      border-color: #A31FDE;
+    }
+  }
 }
 
 @media (max-width: 375px) {

@@ -70,7 +70,7 @@
         <div class="servicing-section__subtitle section__subtitle">с чем поможем</div>
       </div>
       <div class="servicing-section__cards cards cards--2">
-        <div class="cards__item cards__item--column">
+        <div class="cards__item cards__item--column cards__item--tooltip">
           <div class="cards__item-icon">
             <img src="images/common/success.svg" alt="">
           </div>
@@ -80,8 +80,24 @@
               <p>Работа с первичной документацией с соблюдением сроков внесения в 1С</p>
             </div>
           </div>
+          <div class="tooltip tooltip--popup">
+            <div class="tooltip__btn"></div>
+            <div class="tooltip__content">
+              <div class="tooltip__title">Учет банковских операций</div>
+              <div class="tooltip__text text">
+                <p>
+                  · Работа в системе «Банк-клиент» в части формирования проектов платежных поручений и загрузки выписок<br>
+                  · Подготовка платежных поручений на основании полученных счетов/заявки.<br>
+                  · Подготовка платежных поручений по налогам и сборам.· Выписки по счетам: Получение и обработка банковских выписок для сверки операций.<br>
+                  · Контроль остатков: Мониторинг остатков на счетах для управления ликвидностью.· Валютные операции: Учет операций в иностранной валюте, включая конвертацию и учет курсовых разниц.· Кредитные и депозитные операции: Учет операций по кредитам и депозитам.<br>
+                  · Отчеты и аналитика: Формирование отчетов и проведение анализа банковских операций для принятия управленческих решений.
+                </p>
+              </div>
+              <div class="tooltip__close"></div>
+            </div>
+          </div>
         </div>
-        <div class="cards__item cards__item--column">
+        <div class="cards__item cards__item--column cards__item--tooltip">
           <div class="cards__item-icon">
             <img src="images/common/success.svg" alt="">
           </div>
@@ -92,7 +108,7 @@
             </div>
           </div>
         </div>
-        <div class="cards__item cards__item--column">
+        <div class="cards__item cards__item--column cards__item--tooltip">
           <div class="cards__item-icon">
             <img src="images/common/success.svg" alt="">
           </div>
@@ -103,7 +119,7 @@
             </div>
           </div>
         </div>
-        <div class="cards__item cards__item--column">
+        <div class="cards__item cards__item--column cards__item--tooltip">
           <div class="cards__item-icon">
             <img src="images/common/success.svg" alt="">
           </div>
@@ -114,10 +130,10 @@
             </div>
           </div>
         </div>
-        <div class="cards__item cards__item--image">
+        <div class="cards__item cards__item--image cards__item--mobile">
           <img src="images/buhgalterskie-uslugi-page/servicing/1.jpg" alt="">
         </div>
-        <div class="cards__item cards__item--column">
+        <div class="cards__item cards__item--column cards__item--tooltip">
           <div class="cards__item-icon">
             <img src="images/common/success.svg" alt="">
           </div>
@@ -143,38 +159,40 @@
         <p>Аутсорс <span style="color: #8200BB;">выгоднее</span> чем штатная бухгалтерия</p>
       </div>
       <div class="savings-section__table table">
-        <div class="table__col-titles">
-          <div class="table__col-title">Затраты штатной бухгалтерии</div>
-          <div class="table__col-title">% общих затрат</div>
-          <div class="table__col-title">% эквивалент услуг аусорсинга</div>
-        </div>
-        <div class="table__row">
-          <div class="table__col">Зарплата</div>
-          <div class="table__col">60%</div>
-          <div class="table__col">0%</div>
-        </div>
-        <div class="table__row">
-          <div class="table__col">Страховые взносы</div>
-          <div class="table__col">25%</div>
-          <div class="table__col">0%</div>
-        </div>
-        <div class="table__row">
-          <div class="table__col">Затраты на учетную систему и ее поддержку</div>
-          <div class="table__col">10%</div>
-          <div class="table__col">0%</div>
-        </div>
-        <div class="table__row">
-          <div class="table__col">Накладные расходы на бухгалтерию</div>
-          <div class="table__col">5%</div>
-          <div class="table__col">0%</div>
-        </div>
-        <div class="table__row">
-          <div class="table__col"><span style="color: #8200BB;">Аутсорсинг</span></div>
-          <div class="table__col"><span style="color: #8200BB;">0%</span></div>
-          <div class="table__col"><span style="color: #8200BB;">60%</span></div>
+        <div class="table__inner">
+          <div class="table__col-titles table__row">
+            <div class="table__col-title table__col">Затраты штатной бухгалтерии</div>
+            <div class="table__col-title table__col">% общих затрат</div>
+            <div class="table__col-title table__col">% эквивалент услуг аусорсинга</div>
+          </div>
+          <div class="table__row">
+            <div class="table__col">Зарплата</div>
+            <div class="table__col">60%</div>
+            <div class="table__col">0%</div>
+          </div>
+          <div class="table__row">
+            <div class="table__col">Страховые взносы</div>
+            <div class="table__col">25%</div>
+            <div class="table__col">0%</div>
+          </div>
+          <div class="table__row">
+            <div class="table__col">Затраты на учетную систему и ее поддержку</div>
+            <div class="table__col">10%</div>
+            <div class="table__col">0%</div>
+          </div>
+          <div class="table__row">
+            <div class="table__col">Накладные расходы на бухгалтерию</div>
+            <div class="table__col">5%</div>
+            <div class="table__col">0%</div>
+          </div>
+          <div class="table__row">
+            <div class="table__col"><span style="color: #8200BB;">Аутсорсинг</span></div>
+            <div class="table__col"><span style="color: #8200BB;">0%</span></div>
+            <div class="table__col"><span style="color: #8200BB;">60%</span></div>
+          </div>
         </div>
       </div>
-      <div class="savings-section__cards cards">
+      <div class="savings-section__cards cards cards--flex">
         <div class="cards__item cards__item--important cards__item--flex">
           <div class="cards__item-icon">
             <img src="images/common/chart.svg" alt="">
@@ -197,7 +215,7 @@
       <div class="tariffs">
         <div class="tariffs__item">
           <div class="tariffs__item-title">Консультация</div>
-          <div class="tariffs__item-preiod">1 час</div>
+          <div class="tariffs__item-period">1 час</div>
           <div class="tariffs__item-price">0 ₽</div>
           <div class="tariffs__item-text text">
             <p>Lorem ipsum dolor sit amet consectetur. Consequat vestibulum urna vulputate</p>
@@ -207,7 +225,7 @@
         </div>
         <div class="tariffs__item">
           <div class="tariffs__item-title">«Под Ключ»</div>
-          <div class="tariffs__item-preiod">от 10 месяцев</div>
+          <div class="tariffs__item-period">от 10 месяцев</div>
           <div class="tariffs__item-price">от 18 000 ₽/мес</div>
           <div class="tariffs__item-text text">
             <p>Lorem ipsum dolor sit amet consectetur. Consequat vestibulum urna vulputate</p>
@@ -219,7 +237,7 @@
         </div>
         <div class="tariffs__item">
           <div class="tariffs__item-title">Премиум</div>
-          <div class="tariffs__item-preiod">от 10 месяцев</div>
+          <div class="tariffs__item-period">от 10 месяцев</div>
           <div class="tariffs__item-price">от 48 000 ₽/мес</div>
           <div class="tariffs__item-text text">
             <p>Lorem ipsum dolor sit amet consectetur. Consequat vestibulum urna vulputate</p>
@@ -277,7 +295,7 @@
         <h2 class="analysis-section__title section__title"><span style="color: #8200BB;">Бесплатно</span> проведем анализ вашей организации</h2>
         <div class="analysis-section__subtitle section__subtitle">начните с консультации</div>
       </div>
-      <div class="analysis-section__columns section__columns">
+      <div class="analysis-section__columns section__columns section__columns--reverse-mobile">
         <div class="analysis-section__column section__column">
           <div class="analysis-section__cards cards cards--ladder">
             <div class="cards__item cards__item--list">
@@ -308,30 +326,30 @@
 
   <section class="customers-section section section--color">
     <div class="customers-section__container section__container container">
-      <div class="analysis-section__header section__header">
-        <h2 class="analysis-section__title section__title">Наши клиенты</h2>
-        <div class="analysis-section__subtitle section__subtitle">которые нам доверяют</div>
+      <div class="customers-section__header section__header">
+        <h2 class="customers-section__title section__title">Наши клиенты</h2>
+        <div class="customers-section__subtitle section__subtitle">которые нам доверяют</div>
       </div>
-      <div class="analysis-section__media-grid media-grid">
+      <div class="customers-section__media-grid media-grid">
         <div class="media-grid__items">
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
-          <div class="media-grid__item"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
+          <div class="media-grid__item" data-src="images/buhgalterskie-uslugi-page/analysis.jpg" data-fancybox="customers"><img src="images/buhgalterskie-uslugi-page/analysis.jpg" alt=""></div>
         </div>
         <button class="media-grid__btn btn btn--empty" data-download-more>Загрузить еще</button>
       </div>

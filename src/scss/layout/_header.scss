@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 5;
   &__container, &__inner {
     display: flex;
     align-items: center;
@@ -26,7 +28,6 @@
 
 @media (max-width: 991px) {
   .header {
-    position: relative;
     &__logo, &__mobile-contacts-list, &__burger-btn {
       position: relative;
       z-index: 3;

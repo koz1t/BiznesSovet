@@ -100,6 +100,9 @@
     &__columns {
       flex-direction: column;
       gap: 1.11rem;
+      &--reverse-mobile {
+        flex-direction: column-reverse;
+      }
     }
     &__column {
       &--image {
