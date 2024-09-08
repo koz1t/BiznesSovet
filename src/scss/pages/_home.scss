@@ -328,6 +328,21 @@
 
 
 // ==================
+// accounting-services-section
+// ==================
+.accounting-services-section {
+  &__scheme {
+    &:not(:first-child) {
+      margin-top: 2.78rem;
+    }
+  }
+}
+
+
+
+
+
+// ==================
 // analysis-section
 // ==================
 .analysis-section {

@@ -5,30 +5,20 @@
 
 .section {
   margin-bottom: 5.56rem;
-  &--color {
-    background: var(--section-color);
-    .section__container {
-      padding-top: 5.56rem;
-      padding-bottom: 5.56rem;
-    }
-    .cards {
-      &__item {
-        color: var(--base-font-color);
-        background: #FCFCFC;
-        &--important {
-          background: #F4EFEB;
-        }
-      }
-    }
-  }
   &__header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     gap: 1rem;
-    &:not(:last-child) {
-      margin-bottom: 1.11rem;
-    }
+    // &:not(:last-child) {
+    //   margin-bottom: 1.11rem;
+    // }
+  }
+  &__header + &__text {
+    margin-top: 0.83rem;
+  }
+  &__header + *:not(&__text) {
+    margin-top: 1.11rem;
   }
   &__title {
     color: var(--section-title);
@@ -73,6 +63,37 @@
       &:not(:only-child) {
         flex: 0 0 31.11111rem;
       }
+    }
+  }
+  &--color {
+    background: var(--section-color);
+    .section__container {
+      padding-top: 5.56rem;
+      padding-bottom: 5.56rem;
+    }
+    .cards {
+      &__item {
+        color: var(--base-font-color);
+        background: #FCFCFC;
+        &--important {
+          background: #F4EFEB;
+        }
+      }
+    }
+  }
+  &--center {
+    .section__header,
+    .section__text {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .section__header {
+      flex-direction: column;
+      max-width: 35.61111rem;
+    }
+    .section__text {
+      max-width: 41rem;
     }
   }
 }
