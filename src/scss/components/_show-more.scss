@@ -1,0 +1,10 @@
+*.--open > [data-show-more] {
+  span:nth-child(1) {
+    display: none;
+  }
+}
+*:not(.--open) > [data-show-more] {
+  span:nth-child(2) {
+    display: none;
+  }
+}

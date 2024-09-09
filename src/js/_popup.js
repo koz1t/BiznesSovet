@@ -5,6 +5,16 @@ const popupInit = (popup, callers) => {
     btns.forEach(btn => {
       btn.addEventListener('click', () => {
         popup.classList.add('popup--active');
+        const form = popup.querySelector('.feedback-form');
+        if (form) {
+          form.reset();
+          (form.querySelectorAll('.feedback-form__input--error')).forEach(input => {
+            input.classList.remove('feedback-form__input--error');
+          });
+          (form.querySelectorAll('.feedback-form__agreement--error')).forEach(input => {
+            input.classList.remove('feedback-form__agreement--error');
+          });
+        }
       })
     });
 
