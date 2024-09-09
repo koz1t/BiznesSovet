@@ -1,0 +1,59 @@
+.norification-section {
+  &__container {
+    @extend %column-center;
+  }
+  &__title {
+    max-width: 34.88889rem;
+    font-size: 2.55556rem;
+    font-weight: 600;
+    line-height: 110%;
+    color: #232323;
+    text-align: center;
+    &--big {
+      font-size: 7.55556rem;
+    }
+  }
+  &__text {
+    max-width: 33.55556rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 140%;
+    color: #424242;
+    &:not(:first-child) {
+      margin-top: 0.83rem;
+    }
+  } 
+  &__btn {
+    &:not(:first-child) {
+      margin-top: 1.67rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .norification-section {
+    &__title {
+      font-size: 2.2rem;
+      &--big {
+        font-size: 5.5rem;
+      }
+    }
+    &__text {
+      font-size: 0.95rem;
+    } 
+  }
+}
+
+@media (max-width: 375px) {
+  .norification-section {
+    &__title {
+      font-size: 1.88889rem;
+      &--big {
+        font-size: 4.11111rem;
+      }
+    }
+    &__text {
+      font-size: 0.88889rem;
+    } 
+  }
+}

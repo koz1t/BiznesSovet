@@ -31,7 +31,7 @@
           align-items: flex-start;
 }
 
-.hero-section__container, .scheme__item-content, .scheme__item, .scheme, .timeline__item::before, .cards__item-icon {
+.norification-section__container, .hero-section__container, .scheme__item-content, .scheme__item, .scheme, .timeline__item::before, .cards__item-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3526,8 +3526,11 @@ html, body {
   --section-color: #F6F6F6;
 }
 
-.section {
+.section:not(.section--color), .section:not(:last-child) {
   margin-bottom: 5.56rem;
+}
+.section:not(.section--color):only-child {
+  margin-top: 5.56rem;
 }
 .section__header {
   display: -webkit-box;
@@ -3625,8 +3628,11 @@ html, body {
 }
 
 @media (max-width: 991px) {
-  .section {
+  .section:not(.section--color), .section:not(:last-child) {
     margin-bottom: 4rem;
+  }
+  .section:not(.section--color):only-child {
+    margin-top: 4rem;
   }
   .section--color .section__container {
     padding-top: 4rem;
@@ -3666,8 +3672,11 @@ html, body {
   }
 }
 @media (max-width: 375px) {
-  .section {
+  .section:not(.section--color), .section:not(:last-child) {
     margin-bottom: 3.33rem;
+  }
+  .section:not(.section--color):only-child {
+    margin-top: 3.33rem;
   }
   .section--color .section__container {
     padding-top: 3.33rem;
@@ -5347,5 +5356,52 @@ body:has(.tooltip--active.tooltip--popup) {
   }
   .analysis-section__btn:not(:first-child) {
     margin-top: 1.11rem;
+  }
+}
+.norification-section__title {
+  max-width: 34.88889rem;
+  font-size: 2.55556rem;
+  font-weight: 600;
+  line-height: 110%;
+  color: #232323;
+  text-align: center;
+}
+.norification-section__title--big {
+  font-size: 7.55556rem;
+}
+.norification-section__text {
+  max-width: 33.55556rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 140%;
+  color: #424242;
+}
+.norification-section__text:not(:first-child) {
+  margin-top: 0.83rem;
+}
+.norification-section__btn:not(:first-child) {
+  margin-top: 1.67rem;
+}
+
+@media (max-width: 991px) {
+  .norification-section__title {
+    font-size: 2.2rem;
+  }
+  .norification-section__title--big {
+    font-size: 5.5rem;
+  }
+  .norification-section__text {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 375px) {
+  .norification-section__title {
+    font-size: 1.88889rem;
+  }
+  .norification-section__title--big {
+    font-size: 4.11111rem;
+  }
+  .norification-section__text {
+    font-size: 0.88889rem;
   }
 }

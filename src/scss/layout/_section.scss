@@ -4,7 +4,12 @@
 }
 
 .section {
-  margin-bottom: 5.56rem;
+  &:not(&--color), &:not(:last-child) {
+    margin-bottom: 5.56rem;
+  }
+  &:not(&--color):only-child {
+    margin-top: 5.56rem;
+  }
   &__header {
     display: flex;
     align-items: flex-end;
@@ -100,7 +105,12 @@
 
 @media (max-width: 991px) {
   .section {
-    margin-bottom: 4rem;
+    &:not(&--color), &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+    &:not(&--color):only-child {
+      margin-top: 4rem;
+    }
     &--color {
       .section__container {
         padding-top: 4rem;
@@ -135,7 +145,12 @@
 
 @media (max-width: 375px) {
   .section {
-    margin-bottom: 3.33rem;
+    &:not(&--color), &:not(:last-child) {
+      margin-bottom: 3.33rem;
+    }
+    &:not(&--color):only-child {
+      margin-top: 3.33rem;
+    }
     &--color {
       .section__container {
         padding-top: 3.33rem;
