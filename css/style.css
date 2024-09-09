@@ -3752,6 +3752,9 @@ html, body {
   right: 1.39rem;
   z-index: 7;
 }
+.cards__item--tooltip .tooltip--active {
+  z-index: 8;
+}
 .cards__item--image {
   position: relative;
   overflow: hidden;
