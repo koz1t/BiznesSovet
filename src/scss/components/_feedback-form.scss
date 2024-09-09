@@ -116,9 +116,6 @@
   }
   &__submit {
     width: 100%;
-    &[type="submit"] {
-      display: none;
-    }
     &:not(:first-child) {
       margin-top: 1.11rem;
     }

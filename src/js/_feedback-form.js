@@ -3,19 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   forms.forEach(form => {
     const inputs = form.querySelectorAll('.feedback-form__input input');
-    const fakeSubmitButton = form.querySelector('.feedback-form__submit.btn');
-    const realSubmitButton = form.querySelector('button[type="submit"]');
     const agreementCheckbox = form.querySelector('input[name="agreement"]');
     const agreementLabel = form.querySelector('.feedback-form__agreement');
 
-    form.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter') {
-        event.preventDefault();
-        fakeSubmitButton.click();
-      }
-    });
-
-    fakeSubmitButton.addEventListener('click', () => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
       let isValid = true;
 
       inputs.forEach(input => {
@@ -47,9 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (isValid) {
-        console.log(true);
-        // realSubmitButton.click();
+        form.submit();
       }
-    });
+    })
   });
 });
