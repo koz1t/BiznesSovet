@@ -16,3 +16,5 @@
 //@prepros-append _tooltip
 
 //@prepros-append _show-more
+
+//@prepros-append _banner-slider
