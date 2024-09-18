@@ -203,6 +203,9 @@
       &:not(:first-child) {
         margin-top: 0.28rem;
       }
+      br {
+        display: none;
+      }
     }
   }
 }
@@ -330,13 +333,13 @@
 // ==================
 // accounting-services-section
 // ==================
-.accounting-services-section {
-  &__scheme {
-    &:not(:first-child) {
-      margin-top: 2.78rem;
-    }
-  }
-}
+// .accounting-services-section {
+//   &__scheme {
+//     &:not(:first-child) {
+//       margin-top: 2.78rem;
+//     }
+//   }
+// }
 
 
 
@@ -368,5 +371,48 @@
         margin-top: 1.11rem;
       }
     }
+  }
+}
+
+
+
+
+
+// ==================
+// advantages-section
+// ==================
+.advantages-section {
+  background: url("../images/common/protection.svg") no-repeat calc(100% + 4.95rem) center/ 18.31656rem 17.5rem;
+  &__header {
+    align-items: flex-start;
+  }
+  &__title {
+    max-width: 29rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .advantages-section {
+    background-size: 14.05556rem 13.38889rem;
+    background-position: calc(100% + 3.65rem) 6.06rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .advantages-section {
+    background-size: 9.71067rem 9.27778rem;
+  }
+}
+
+
+
+
+
+// ==================
+// expertise-section
+// ==================
+.expertise-section {
+  &__title, &__text {
+    max-width: 25.55556rem;
   }
 }
