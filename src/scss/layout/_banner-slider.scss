@@ -44,9 +44,6 @@
         }
       }
     }
-    &-bg {
-      transition: inherit;
-    }
     &-title {
       font-size: 2.88889rem;
       font-weight: 600;
@@ -61,6 +58,11 @@
       font-size: 1.33333rem;
       font-weight: 500;
       line-height: 130%;
+    }
+    @media (min-width: 992px) {
+      &-text-subtitle {
+        display: none;
+      }
     }
     &-text {
       font-size: 0.88889rem;
@@ -84,8 +86,10 @@
     }
 
     &:not(&--active) {
-      .banner-slider__slide-column {
-        transform: translateY(-20%);
+      @media (min-width: 992px) {
+        .banner-slider__slide-column + .banner-slider__slide-column {
+          transform: translateY(-20%);
+        }
       }
       opacity: 0;
       visibility: hidden;
@@ -93,8 +97,9 @@
   }
   &__pagination {
     position: absolute;
-    // bottom: 3rem;
-    top: 83%;
+    @media (min-width: 992px) {
+      top: 83% !important;
+    }
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 2.78rem * 2);
@@ -165,6 +170,67 @@
   .banner-slider {
     &__slide {
       flex-direction: column;
+      gap: 6.39rem;
+      padding: 5.56rem 1.67rem;
+      min-height: auto;
+      &-text-title {
+        &:not(:first-child) {
+          margin-top: 0.28rem;
+        }
+      }
+      &-text-subtitle {
+        font-weight: 500;
+        line-height: 140%;
+        color: var(--primary-color);
+      }
+    }
+    &__pagination {
+      width: calc(100% - 1.67rem * 2);
+      transform: translate(-50%, calc(3.195rem - 50%));
+      counter-reset: item;
+      &-item {
+        counter-increment: item;
+        &-inner {
+          &::before {
+            content: counter(item,decimal-leading-zero);
+          }
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+  } 
+}
+
+@media (max-width: 375px) {
+  .banner-slider {
+    &__slide {
+      &-title {
+        font-size: 1.88889rem;
+      }
+      &-subtitle {
+        font-size: 0.8889rem;
+      }
+      &-text {
+        font-size: 0.7778rem;
+        &-title {
+          font-size: 1rem;
+        }
+        &-subtitle {
+          font-size: 0.8889rem;
+        }
+      }
+      &-btns {
+        flex-direction: column;
+        gap: 0.56rem;
+        &:not(:first-child) {
+          margin-top: 1.67rem;
+        }
+      }
+      &-btn {
+        width: 100% !important;
+      }
     }
   } 
 }

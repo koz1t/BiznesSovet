@@ -100,9 +100,19 @@
       border-color: transparent;
     }
   }
-  &--4, &--2 {
+  &--2, &--3, &--4 {
     display: grid;
     gap: 0.56rem;
+  }
+  &--2 {
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &--3 {
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
   &--4 {
     grid-template-columns: repeat(4, 1fr);
@@ -113,11 +123,6 @@
           grid-column: span 2;
         }
       }
-    }
-  }
-  &--2 {
-    @media (min-width: 992px) {
-      grid-template-columns: repeat(2, 1fr);
     }
   }
   &--flex {
