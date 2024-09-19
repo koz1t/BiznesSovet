@@ -18,3 +18,5 @@
 //@prepros-append _show-more
 
 //@prepros-append _banner-slider
+
+//@prepros-append _progress-list

@@ -12,9 +12,14 @@
   }
   &__header {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 1rem;
+    @media (min-width: 992px) {
+      .section__subtitle {
+        margin-top: 0.83rem;
+      }
+    }
     // &:not(:last-child) {
     //   margin-bottom: 1.11rem;
     // }

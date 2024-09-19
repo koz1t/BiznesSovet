@@ -1,0 +1,113 @@
+.portfolio {
+  position: relative;
+  overflow: visible;
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &-image {
+      position: relative;
+      flex: 0 0 31.11111rem;
+      padding-bottom: 34.55556rem;
+      background: #fff;
+      border-radius: 1.51022rem;
+      overflow: hidden;
+      box-shadow: 0 0.7518rem 2.2653rem 0 rgb(#000, 0.15);
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @extend %fill-image;
+      }
+    }
+    &-content {
+      align-self: stretch;
+      margin-top: 6rem;
+      @extend %flex-column;
+      &:not(:only-child) {
+        flex: 0 0 29.3333rem;
+      }
+    }
+    &-result {
+      &:not(:first-child) {
+        margin-top: 1.67rem;
+      }
+      &:not(:last-child) {
+        margin-bottom: 3.33rem;
+      }
+    }
+    &-compensation {
+      margin-top: auto;
+      display: flex;
+      gap: 4.67rem;
+      color: #3D3D3D;
+      font-size: 2.33333rem;
+      font-weight: 400;
+      line-height: 150%;
+      &-title {
+        color: #848484;
+        font-size: 0.88889rem;
+        line-height: 150%;
+      }
+    }
+    &-new-compensation {
+      color: var(--primary-color);
+    }
+  }
+  .swiper-slide {
+    transition: 0.4s all;
+    &:not(.swiper-slide-active) {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .swiper-btns {
+    position: absolute;
+    top: 0;
+    left: 34.3rem;
+    z-index: 4;
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio {
+    padding-top: 4.33667rem;
+    &__item {
+      flex-direction: column;
+      gap: 1.67rem;
+      &-image {
+        flex: auto;
+        align-self: center;
+        width: 70%;
+        padding-bottom: 79%;
+      }
+      &-content {
+        margin-top: 0;
+        &:not(:only-child) {
+          flex: auto;
+        }
+      }
+    }
+    .swiper-btns {
+      left: 0;
+    }
+  } 
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    &__item {
+      &-image {
+        width: 100%;
+        padding-bottom: 112%;
+      }
+      &-compensation {
+        flex-direction: column;
+        gap: 1.11rem;
+        &-title {
+          font-size: 0.77778rem;
+        }
+      }
+    }
+  } 
+}

@@ -16,4 +16,14 @@ img {
 
 .--hidden {
   display: none !important;
+  @media (max-width: 991px) {
+    &-tablet {
+      display: none !important;
+    }
+  }
+  @media (max-width: 375px) {
+    &-mobile {
+      display: none !important;
+    }
+  }
 }

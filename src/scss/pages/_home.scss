@@ -165,6 +165,11 @@
     .feedback-section__text {
       max-width: 22.22222rem;
     }
+    &-under {
+      @media (min-width: 992px) {
+        background: url("../images/common/protection.svg") no-repeat 7.78rem 70% /5.55556rem 5.33333rem;
+      }
+    }
   }
   &__text {
     &:not(:first-child) {
@@ -383,9 +388,6 @@
 // ==================
 .advantages-section {
   background: url("../images/common/protection.svg") no-repeat calc(100% + 4.95rem) center/ 18.31656rem 17.5rem;
-  &__header {
-    align-items: flex-start;
-  }
   &__title {
     max-width: 29rem;
   }
@@ -414,5 +416,97 @@
 .expertise-section {
   &__title, &__text {
     max-width: 25.55556rem;
+  }
+}
+
+
+
+
+
+// ==================
+// profit-section
+// ==================
+.profit-section {
+  &__text {
+    max-width: 22.22222rem;
+  }
+  &__progress-list,
+  &__cards {
+    &:not(:first-child) {
+      margin-top: 1.72rem;
+    }
+  }
+  &__cards {
+    .cards__item {
+      color: #3D3D3D;
+      padding: 1.11rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .profit-section {
+    &__text {
+      max-width: 100%;
+    }
+    &__progress-list,
+    &__cards {
+      &:not(:first-child) {
+        margin-top: 1.67rem;
+      }
+    }
+    &__cards {
+      .cards__item {
+        padding: 0.83rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+// ==================
+// portfolio-section
+// ==================
+.portfolio-section {
+  overflow: hidden;
+}
+
+
+
+
+
+// ==================
+// reporting-feedback-section
+// ==================
+.reporting-feedback-section {
+  @media (min-width: 992px) {
+    &__title {
+      max-width: 28.38889rem;
+    }
+    &__text {
+      max-width: 23.94444rem;
+    }
+  }
+}
+
+
+
+
+
+// ==================
+// partners-section
+// ==================
+.partners-section {
+  &__cards {
+    &:not(:first-child) {
+      margin-top: 1.67rem;
+    }
+    justify-content: center;
+    .cards__item {
+      max-width: 35.2222rem;
+    }
   }
 }

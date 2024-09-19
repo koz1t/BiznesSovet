@@ -38,23 +38,6 @@
       }
     }
   }
-  .swiper-pagination {
-    position: static;
-    margin-top: 0.7rem;
-    &-bullet {
-      width: 0.44444rem;
-      height: 0.44444rem;
-      margin: 0 0.28rem !important;
-      background: #C8C8C8;
-      border-radius: 0.27778rem;
-      opacity: 1;
-      transition: 0.4s all;
-      &-active {
-        width: 1.66667rem;
-        background: var(--primary-color);
-      }
-    }
-  }
   &--label {
     .slider__item {
       &-inner {

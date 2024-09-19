@@ -9,7 +9,7 @@ tooltips.forEach(tooltip => {
   }
 
   tooltip.addEventListener('click', (e) => {
-    if (tooltip.classList.contains('tooltip--popup')) {
+    if (tooltip.classList.contains('tooltip--popup') || window.innerWidth < 992) {
       if (!e.target.closest('.tooltip__btn') && (!e.target.closest('.tooltip__content') || e.target.closest('.tooltip__close'))) {
         tooltip.classList.remove('tooltip--active');
       }

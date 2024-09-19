@@ -1,14 +1,10 @@
-new Swiper('.swiper:not(.swiper--3)', {
+new Swiper('.swiper:not(.swiper--3, .portfolio)', {
   slidesPerView: 1,
-  // loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
   speed: 500,
-  // autoplay: {
-  //   delay: 3000,
-  // },
   breakpoints: {
     376: {
       slidesPerView: 2,
@@ -24,15 +20,11 @@ new Swiper('.swiper:not(.swiper--3)', {
 
 new Swiper('.swiper--3', {
   slidesPerView: 1,
-  // loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
   speed: 500,
-  // autoplay: {
-  //   delay: 3000,
-  // },
   breakpoints: {
     551: {
       slidesPerView: 2,
@@ -41,4 +33,19 @@ new Swiper('.swiper--3', {
       slidesPerView: 3,
     }
   }
+});
+
+new Swiper('.portfolio', {
+  slidesPerView: 1,
+  autoHeight: true,
+  allowTouchMove: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
+  },
+  speed: 500,
 });

@@ -1,4 +1,7 @@
 .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.56rem;
   &__item {
     display: flex;
     gap: 0.83rem;
@@ -12,6 +15,11 @@
       color: #424242;
       font-size: 1rem;
       font-weight: 500;
+    }
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 0.83rem;
     }
     &-icon {
       flex-shrink: 0;
@@ -40,6 +48,48 @@
     &-text {
       @extend %flex-column;
       gap: 0.28rem;
+      &.text {
+        ul li {
+          padding-left: 0.94889rem;
+          &::before {
+            width: 0.3889rem;
+            height: 0.3889rem;
+          }
+        }
+      }
+    }
+    &-list {
+      @extend %flex-column;
+      gap: 0.56rem;
+      &-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.56rem;
+        padding-left: 0.94889rem;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 0.3889rem;
+          height: 0.3889rem;
+          border-radius: 50%;
+          background: var(--primary-color);
+        }
+        .tooltip {
+          &__btn {
+            width: 1.1111rem;
+            height: 1.1111rem;
+          }
+        }
+      }
+    }
+    &--header {
+      flex-direction: column;
+      gap: 1.39rem;
+      color: #3D3D3D;
     }
     &--full {
       grid-column: 1 / -1;
@@ -126,8 +176,7 @@
     }
   }
   &--flex {
-    display: flex;
-    gap: 0.56rem;
+    flex-direction: row;
     flex-wrap: wrap;
     .cards__item {
       flex-grow: 1;
