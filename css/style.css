@@ -5017,6 +5017,11 @@ html, body {
             flex: 0 0 25.16667rem;
   }
 }
+@media (min-width: 992px) {
+  .banner-slider__slide-title, .banner-slider__slide-subtitle {
+    max-width: 20rem;
+  }
+}
 .banner-slider__slide-title {
   font-size: 2.88889rem;
   font-weight: 600;
