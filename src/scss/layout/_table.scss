@@ -4,6 +4,9 @@
   padding-bottom: 1rem;
   &__row {
     display: flex;
+    &:nth-child(2n+3) {
+      background: #fff;
+    }
     &:nth-child(2n) {
       background: #F6F6F6;
     }
